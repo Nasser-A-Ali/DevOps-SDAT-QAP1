@@ -1,11 +1,11 @@
 package com.keyin;
 
 public abstract class BankAccount {
-    private static int numberOfAccounts;
+    protected static int numberOfAccounts;
 
-    private final int accountId;
-    private String accountHolderName;
-    private double balance;
+    protected final int accountId;
+    protected String accountHolderName;
+    protected double balance;
 
     protected BankAccount (String accountHolderName, double initialBalance){
         numberOfAccounts++;
